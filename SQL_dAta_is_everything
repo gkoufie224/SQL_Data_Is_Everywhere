@@ -1,0 +1,47 @@
+SELECT first_name, last_name from employees.employees;
+
+SELECT dept_no from employees.departments;
+
+SELECT * FROM employees.departments;
+
+SELECT * FROM employees.employees where first_name = 'Elvis' OR first_name = 'Denis';
+
+SELECT * from employees.employees where gender = 'f' and first_name = 'Kellie';
+
+SELECT * FROM employees.employees where first_name = 'Elvis' AND first_name = 'Denis';
+
+SELECT * FROM employees.employees WHERE first_name = 'Kellie' OR first_name = 'Aruna';
+
+SELECT * FROM employees.employees WHERE last_name = 'Denis' AND gender = 'M' OR gender = 'F';
+
+SELECT * FROM employees.employees WHERE last_name = 'Denis' AND (gender = 'M' OR gender = 'F');
+
+SELECT * FROM employees.employees WHERE gender = 'F' AND (first_name = 'Kellie' OR first_name = 'Aruna');
+
+SELECT * FROM employees.employees WHERE first_name = 'Cathie' OR first_name = 'Mark' OR first_name = 'Nathan';
+
+SELECT * FROM employees.employees WHERE first_name IN ('Cathie', 'Mark', 'Nathan');
+
+SELECT * FROM employees.employees WHERE first_name NOT IN ('Cathie', 'Mark', 'Nathan');
+
+SELECT * FROM employees.employees WHERE first_name IN ("Denis","Elvis");
+
+SELECT * FROM employees.employees WHERE first_name NOT IN ('John', 'Mark', 'Jacob');
+
+SELECT * FROM employees.employees WHERE first_name LIKE ('Mar%');
+
+SELECT * FROM employees.employees WHERE first_name LIKE ('ar%');
+
+SELECT * FROM employees.employees WHERE first_name LIKE ('Mar_');
+
+SELECT * FROM employees.employees WHERE first_name LIKE ('Mark%');
+
+SELECT * FROM employees.employees WHERE hire_date LIKE ('%2000%');
+
+SELECT * FROM employees.employees WHERE emp_no LIKE ('1000_');
+
+SELECT * FROM employees.employees WHERE first_name LIKE ('%Jack%');
+
+SELECT * FROM employees.employees WHERE first_name NOT LIKE ('%Jack%');
+
+
